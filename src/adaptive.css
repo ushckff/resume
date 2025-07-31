@@ -1,0 +1,100 @@
+@media (max-width: 610px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, auto);
+    justify-content: center; 
+    gap: 16px; 
+  }
+
+  .content .experience {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .content .tools {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .content .education {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .content .interests {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .content .footer {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+
+  .page-header {
+    justify-content: center;
+  }
+
+  .content > * {
+    justify-self: center;
+  }
+
+
+  .education-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 16px;
+  }
+
+  .education__ui,
+  .education__law,
+  .education__web {
+    grid-area: auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .experience,
+  .tools,
+  .education,
+  .interests,
+  .footer {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .manager-content,
+  .graphic-content,
+  .assistant-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .manager-info,
+  .manager-description,
+  .graphic-info,
+  .graphic-description,
+  .assistant-info,
+  .assistant-description {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .manager-info__title,
+  .manager-info__position,
+  .graphic-info__title,
+  .graphic-info__position,
+  .assistant-info__title,
+  .assistant-info__position {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 390px) {
+  .manager-content,
+  .graphic-content,
+  .assistant-content {
+    flex-direction: column;
+  }
+
+  .experience,
+  .tools,
+  .education,
+  .interests {
+    padding: 12px 8px;
+  }
+}

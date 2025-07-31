@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script type="module" src="/src/script.js"></script>
+</head>
+<body>
+  <div class="container" id="resume">
+    <header class="page-header">
+      <figure class="profile-photo">
+        <img class="profile-photo" src="/cat.jpg" alt="profile-photo"> 
+      </figure>
+
+      <section class="greeting ripple-container">
+        <div>
+          <p class="greeting__intro" contenteditable="true" data-key="greeting__intro">
+            Hello 👋🏻 I’m
+          </p>
+          <button id="download-resume" class="greeting__resume">Download PDF</button>
+        </div>
+        <div class="greeting__author author">
+          <h1 class="author-name" contenteditable="true" data-key="author-name">
+            Karthik SR
+          </h1>
+          <p class="author-job" contenteditable="true" data-key="author-job">
+            UX/UI Designer
+          </p>
+        </div>
+      </section>
+
+      <section class="languages ripple-container">
+        <h2 class="languages-time" contenteditable="true" data-key="languages-time">Languages</h2>
+        <div class="languages-levels">
+          <ul class="languages-list">
+            <li >
+              <span class="languages-item" contenteditable="true" data-key="language1">English</span>
+            </li>
+            <li>
+              <span class="languages-item" contenteditable="true" data-key="language2">Malayalam</span>
+            </li>
+            <li >
+              <span class="languages-item" contenteditable="true" data-key="language3">Hindi</span>
+            </li>
+          </ul>
+          <div class="languages-progress">
+            <img src="/fullLine.svg" alt="progress-bar">
+            <img src="/fullLine.svg" alt="progress-bar">
+            <img src="/smallLine.svg" alt="progress-bar">
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="content">
+      <section class="experience">
+        <div class="experience-container">
+          <h2 class="experience-title" contenteditable="true" data-key="experience">Experience</h2>
+          <article class="experience__manager ripple-container">
+            <header class="manager-header">
+              <time class="manager-time" datetime="2023-06" contenteditable="true" data-key="manager-time">Jun. 2023 - Present</time>
+              <span class="manager-importance" contenteditable="true" data-key="manager-importance">most recent</span>
+            </header>
+            <div class="manager-content">
+              <div class="manager-info">
+                <h3 class="manager-info__title" contenteditable="true" data-key="manager-info__title">Marketing Manager</h3>
+                <p class="manager-info__position" contenteditable="true" data-key="manager-info__position">Pankayam | Full-time</p>
+              </div>
+              <ul class="manager-description">
+                <li class="manager-description__item" contenteditable="true" data-key="manager-description__item1">
+                  Strategy development and planning of campaigns that promote the business and generate genuine traffic
+                </li>
+                <li class="manager-description__item" contenteditable="true" data-key="manager-description__item2">
+                  SEO Content Creation for Blogs, Website, Social media
+                </li>
+              </ul>
+            </div>
+          </article>
+          
+          <article class="experience__graphic ripple-container">
+            <header class="graphic-header">
+              <time datetime="2017" contenteditable="true" data-key="graphic-time">2017 - Present</time>
+            </header>
+            <div class="graphic-content">
+              <div class="graphic-info">
+                <h3 class="graphic-info__title" contenteditable="true" data-key="graphic-info__title">Graphic / Web designer</h3>
+                <p class="graphic-info__position" contenteditable="true" data-key="graphic-info__position">Freelance</p>
+              </div>
+              <ul class="graphic-description">
+                <li class="graphic-description__item" contenteditable="true" data-key="graphic-description__item1">
+                  Development of internal projects from scratch, product design of brands
+                </li>
+                <li class="graphic-description__item" contenteditable="true" data-key="graphic-description__item2">
+                  Landing page, webapps and hybrid apps
+                </li>
+                <li class="graphic-description__item" contenteditable="true" data-key="graphic-description__item3">
+                  Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience__assistant ripple-container">
+            <header class="assistant-header">
+              <time datetime="2021-09" contenteditable="true" data-key="assistant-time1">Sep. 2021 -</time> <time datetime="2023-06" contenteditable="true" data-key="assistant-time2">Jun. 2023</time>
+            </header>
+            <div class="assistant-content">
+              <div class="assistant-info">
+                <h3 class="assistant-info__title" contenteditable="true" data-key="assistant-info__title">Legal Assistant</h3>
+                <p class="assistant-info__position" contenteditable="true" data-key="assistant-info__position">Law Firm | Intern</p>
+              </div>
+              <ul class="assistant-description">
+                <li class="assistant-description__item" contenteditable="true" data-key="assistant-description__item1">
+                  Provide administrative support to lawyer and enhance office effectiveness
+                </li>
+                <li class="assistant-description__item" contenteditable="true" data-key="assistant-description__item2">
+                  Handle communication with clients, witnesses etc.
+                </li>
+                <li class="assistant-description__item" contenteditable="true" data-key="assistant-description__item3">
+                  repare case briefs and summarize depositions, interrogatories and testimony
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tools ripple-container">
+        <h2 class="tools-title" contenteditable="true" data-key="tools-title">Tools</h2>
+        <div class="tools-container">
+          <article class="design-section">
+            <h4 class="design-title" contenteditable="true" data-key="design-title">design</h4>
+            <div class="design-tools">
+              <img class="design-item" src="/logoFigma.svg" alt="logo-figma">
+              <img class="design-item" src="/logoPhotoshop.svg" alt="logo-photoshop">
+              <img class="design-item" src="/logoIllustrator.svg" alt="logo-illustrator">
+              <img class="design-item" src="/logoPremiere.svg" alt="logo-premiere">
+              <img class="design-item" src="/logoNotion.svg" alt="logo-notion">
+              <img class="design-item" src="/logoMeet.svg" alt="logo-meet">
+            </div>
+          </article>
+
+          <article class="nocode-section">
+            <h4 class="nocode-title" contenteditable="true" data-key="nocode-title">no-code</h4>
+            <div class="nocode-tools">
+                <img class="nocode-item" src="/logoZapier.svg" alt="logo-zapier">
+                <img class="nocode-item" src="/logoWebflow.svg" alt="logo-webflow">
+                <img class="nocode-item" src="/logoFramer.svg" alt="logo-framer">
+                <img class="nocode-item" src="/logoWordpress.svg" alt="logo-wordpress">
+            </div>
+          </article>
+
+          <article class="intelligence-section">
+            <h4 class="intelligence-title" contenteditable="true" data-key="intelligence-title">artoficial intelligence</h4>
+            <div class="intelligence-tools">
+              <img class="intelligence-item" src="/logoChatGPT.svg" alt="logo-chatgpt">
+              <img class="intelligence-item" src="/logoCopilot.svg" alt="logo-copilot">
+              <img class="intelligence-item" src="/logoMidjourney.svg" alt="logo-midjourney">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="education">
+        <h2 contenteditable="true" data-key="education">Education</h2>
+        <div class="education-container">
+          <article class="education__ui ripple-container">
+            <header class="ui-header">
+              <time class="ui-time" datetime="2023" contenteditable="true" data-key="ui-time">2023</time>
+              <img class="ui-emoji" src="/emoji.svg" alt="emoji">
+            </header>
+            <div>
+              <h3 class="ui-title" contenteditable="true" data-key="ui-title">UI/UX</h3>
+              <ul class="ui-tags">
+                <li contenteditable="true" data-key="ui-tag1">#UX</li>
+                <li contenteditable="true" data-key="ui-tag2">#UI</li>
+                <li contenteditable="true" data-key="ui-tag3">#research</li>
+                <li contenteditable="true" data-key="ui-tag4">#DesignSystem</li>
+                <li contenteditable="true" data-key="ui-tag5">#Ui</li>
+                <li contenteditable="true" data-key="ui-tag6">#wireframing</li>
+                <li contenteditable="true" data-key="ui-tag7">#figma</li>
+                <li contenteditable="true" data-key="ui-tag8">#Ux</li>
+              </ul>
+            </div>
+            <footer class="ui-university" contenteditable="true" data-key="ui-university">
+              Coursera
+            </footer>
+          </article>
+
+          <article class="education__law ripple-container">
+            <header class="law-header">
+              <time datetime="2017" contenteditable="true" data-key="law-time1">2017 -</time> <time datetime="2022" contenteditable="true" data-key="law-time2">2022</time>
+            </header>
+            <div>
+              <h3 class="law-title" contenteditable="true" data-key="law-title">Law</h3>
+              <ul class="law-tags">
+                <li contenteditable="true" data-key="law-tag1">#law</li>
+                <li contenteditable="true" data-key="law-tag2">#legalStudies</li>
+                <li contenteditable="true" data-key="law-tag3">#contracts</li>
+                <li contenteditable="true" data-key="law-tag4">#internationalLaws</li>
+              </ul>
+            </div>
+            <footer class="law-university" contenteditable="true" data-key="law-university">
+              University of Kerala
+            </footer>
+          </article>
+
+          <article class="education__web ripple-container">
+            <header class="web-header">
+              <time class="web-time" datetime="2017" contenteditable="true" data-key="web-time">2017</time>
+            </header>
+            <div>
+              <h3 class="web-title" contenteditable="true" data-key="web-title">Graphic design</h3>
+              <ul class="web-tags">
+                <li contenteditable="true" data-key="web-tag1">#branding</li>
+                <li contenteditable="true" data-key="web-tag2">#web</li>
+                <li contenteditable="true" data-key="web-tag3">#illustration</li>
+                <li contenteditable="true" data-key="web-tag4">#adobe</li>
+              </ul>
+            </div>
+            <footer class="web-university" contenteditable="true" data-key="web-university">
+              Coursera
+            </footer>
+          </article>
+        </section>
+
+      <section class="interests ripple-container">
+        <h2 contenteditable="true" data-key="interests">Interests</h2>
+        <ul class="interests-list">
+          <li class="interests-item" contenteditable="true" data-key="interests-item1">branding</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item2">design</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item3">photography</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item4">artificial intelligence</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item5">illustration</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item5">typography</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item6">social networks</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item7">research</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item8">dron pilot</li>
+          <li class="interests-item" contenteditable="true" data-key="interests-item9">games</li>
+        </ul>
+      </section>
+
+      <footer class="footer ripple-container">
+        <p class="footer-paragraph" contenteditable="true" data-key="footer-paragraph">Let's chat! I'm ready to work on excinting projects</p>
+        <a class="footer-email" href="mailto:srkarthik.designscape@gmail.com" contenteditable="true" data-key="footer-email">srkarthik.designscape@gmail.com</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

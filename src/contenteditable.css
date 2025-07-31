@@ -1,0 +1,35 @@
+[contenteditable="true"]:focus {
+  outline: none;
+}
+
+[contenteditable="true"]:focus {
+  box-shadow: 0 0 0 2px var(--bg-color-green);
+  border-radius: 4px;
+}
+
+[contenteditable="true"] {
+  cursor: text;
+}
+
+[contenteditable="true"]::selection {
+  background: var(--bg-color-green);
+  color: var(--text-color-white);
+}
+
+[contenteditable="true"]::after {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+[contenteditable="true"]:not(:empty)::after {
+  content: "";
+}
+
+[contenteditable="true"] {
+  transition: background-color 0.2s, box-shadow 0.2s;
+}

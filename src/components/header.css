@@ -1,0 +1,132 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.profile-photo {
+  height: 124px;
+  width: 124px;
+  border-radius: 12px;
+  flex: 0 0 auto;
+}
+
+.greeting {
+  height: 124px;
+  width: 124px;
+  background-color: var(--bg-color-grey);
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 auto;
+  justify-content: space-between;
+}
+
+.greeting__intro {
+  width: 100px;
+  height: 15px;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-poppins);
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.greeting__author {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  gap: 6px;
+}
+
+.author-name {
+  height: 15px;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104%;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.author-job {
+  height: 18px;
+  color: var(--text-color-grey);
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.languages {
+  height: 124px;
+  width: 267px;
+  background-color: var(--bg-color-grey);
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 auto;
+  gap: 16px;
+}
+
+.languages-time {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.languages-levels {
+  width: 243px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 17px;
+}
+
+.languages-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 104%;
+  min-width: 0;
+}
+
+.languages-item {
+  display: block;
+  max-width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.languages-progress {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  gap: 10px;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.languages-progress img { 
+  flex: none;
+}
